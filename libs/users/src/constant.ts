@@ -1,0 +1,4 @@
+export class UserLibConstants {
+  static USER_REPOSITORY = "USER_REPOSITORTY";
+  static DOCUMNENT_REPOSITORY = "DOCUMNENT_REPOSITORY";
+}
