@@ -1,0 +1,66 @@
+{
+  "collection": "@nestjs/schematics",
+  "monorepo": true,
+  "sourceRoot": "apps/control-panel/src",
+  "root": "apps/control-panel",
+  "projects": {
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    },
+    "control-panel": {
+      "type": "application",
+      "root": "apps/control-panel",
+      "entryFile": "main",
+      "sourceRoot": "apps/control-panel/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/control-panel/tsconfig.app.json"
+      }
+    },
+    "users": {
+      "type": "library",
+      "root": "libs/users",
+      "entryFile": "index",
+      "sourceRoot": "libs/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/users/tsconfig.lib.json"
+      }
+    },
+    "common": {
+      "type": "library",
+      "root": "libs/common",
+      "entryFile": "index",
+      "sourceRoot": "libs/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    },
+    "database": {
+      "type": "library",
+      "root": "libs/database",
+      "entryFile": "index",
+      "sourceRoot": "libs/database/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/database/tsconfig.lib.json"
+      }
+    },
+    "user-apis": {
+      "type": "application",
+      "root": "apps/user-apis",
+      "entryFile": "main",
+      "sourceRoot": "apps/user-apis/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user-apis/tsconfig.app.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": false,
+    "tsConfigPath": "apps/tsconfig.app.json"
+  }
+}
