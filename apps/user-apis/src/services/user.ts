@@ -63,7 +63,7 @@ export class UserApiService {
     if (!document) {
       throw new BadRequestException("Invalid document Id");
     } else {
-      await this.service.deleteDocument(document.documentSlug);
+      await this.service.deleteDocument(document.documentSlug); // delete from S3
       return await this.service.documentRepo.deleteWhere({ id: inputs.id }); // or we can chnage the status as inactive(soft delete)
     }
   }

@@ -120,6 +120,9 @@ DB_DEBUG=0
 
 ```
 
+### Testing
+run npm run test command
+
 ### Setup Instructions
 Create a .env file in the root directory of the project if it does not already exist.
 Add the above environment variables to the .env file with the appropriate values.
