@@ -124,12 +124,12 @@ DB_DEBUG=0
 run npm run test command
 
 ### Setup Instructions
-Create a .env file in the root directory of the project if it does not already exist.
-Add the above environment variables to the .env file with the appropriate values.
-Ensure that PostgreSQL is installed and running locally or on a remote server.
-Make sure the specified database (documents) exists or create it manually if necessary.
-The application will use these environment variables to establish a connection to the PostgreSQL database.
-This setup allows the application to connect to the PostgreSQL database, perform operations, and manage documents.
+Create a .env file in the root directory of the project if it does not already exist
+Add the above environment variables to the .env file with the appropriate values
+Ensure that PostgreSQL is installed and running locally or on a remote server
+Make sure the specified database (documents) exists or create it manually if necessary
+The application will use these environment variables to establish a connection to the PostgreSQL database
+This setup allows the application to connect to the PostgreSQL database, perform operations, and manage documents
 
 
 ### Queries
